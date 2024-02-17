@@ -8,12 +8,11 @@ cc = timeit('fib(93)', number=1_000_000, setup='from c_fib_import import fib')
 
 print('Python Puro', py)
 print('Cython/Python', cy)
-print('Cython Puro',px)
-print('C Puro',cc)
+print('Cython Puro', px)
+print('C Puro', cc)
 
 print(f'{py/cy=}')
 print(f'{py/px=}')
 print(f'{py/cc=}')
 print(f'{cy/cc=}')
 print(f'{px/cc=}')
-

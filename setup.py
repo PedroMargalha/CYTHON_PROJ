@@ -2,12 +2,7 @@ from setuptools import setup, Extension
 from Cython.Build import cythonize
 
 exts = cythonize(
-    [Extension(
-        'c_fib_import',
-        sources=['c_fib.c', 'c_fib_import.pyx']
-        )]
+    [Extension('c_fib_import', sources=['c_fib.c', 'c_fib_import.pyx'])]
 )
 
-setup(
-    ext_modules=exts
-)
+setup(ext_modules=exts)
